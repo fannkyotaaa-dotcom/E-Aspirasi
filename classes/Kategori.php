@@ -10,7 +10,7 @@ class Kategori {
         $this->conn = $db;
     }
 
-    // Read Semua Data
+    // Read Semua 
     public function readAll() {
         $query = "SELECT * FROM " . $this->table_name . " ORDER BY id_kategori DESC";
         $stmt = $this->conn->prepare($query);
